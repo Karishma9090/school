@@ -1,8 +1,6 @@
 package com.example.school;
 
-import android.icu.text.SimpleDateFormat;
 import android.os.Bundle;
-import android.text.format.DateFormat;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -11,31 +9,25 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-public class MainActivity extends AppCompatActivity {
+public class about extends AppCompatActivity {
 
-    TextView textView,textView2;
+    TextView dateTimeTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
-
-        textView=findViewById(R.id.cdatetime);
-        textView2=findViewById(R.id.locaitontxtview);
-        String date = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(new Date());
-        textView.setText(date);
+        setContentView(R.layout.activity_about);
 
 
+        dateTimeTextView = findViewById(R.id.txtdt);
 
-
-
-
-
-
+        String currentDateandTime = new SimpleDateFormat("yyyyMMdd_HHmmss", Locale.getDefault()).format(new Date());
+        dateTimeTextView.setText(currentDateandTime);
 
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
@@ -43,7 +35,5 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
-
     }
 }

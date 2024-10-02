@@ -38,7 +38,7 @@
             android:layout_height="wrap_content"
             android:text="Date"
             android:textStyle="bold"
-            android:textSize="20dp"
+            android:textSize="10dp"
             />
 
     <TextView
@@ -73,6 +73,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Temp and Location"
+            android:id="@+id/locaitontxtview"
             />
     </LinearLayout>
     </LinearLayout>
