@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:background="@drawable/bg2"
+    android:background="@drawable/bgn1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:text="Good Morning"
         android:textStyle="bold"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="25dp"
         android:layout_marginTop="25dp"/>
 
@@ -37,6 +37,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Date"
+            android:textColor="@color/white"
             android:textStyle="bold"
             android:textSize="10dp"
             />
@@ -46,7 +47,7 @@
             android:layout_height="wrap_content"
             android:text="Satwik Pachino"
             android:textStyle="italic"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="40dp"
             />
 
@@ -55,7 +56,7 @@
         android:id="@+id/emailid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-             android:textColor="@color/black"
+             android:textColor="@color/white"
             android:text="karishmapradhan@gmail.com"/>
     </LinearLayout>
 
@@ -73,6 +74,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Temp and Location"
+            android:textColor="@color/white"
             android:id="@+id/locaitontxtview"
             />
     </LinearLayout>
@@ -93,6 +95,7 @@
             android:textSize="20dp"
             android:textStyle="bold"
             android:padding="10dp"
+            android:textColor="@color/white"
 
 
             />
